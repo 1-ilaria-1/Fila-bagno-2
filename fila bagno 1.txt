@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestione Fila Bagno</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registrazione per il Bagno in Classe</h1>
+    </header>
+    <main>
+        <form id="registration-form">
+            <label for="student-name">Nome dello studente:</label>
+            <input type="text" id="student-name" name="student-name" required>
+            <label for="entry-time">Orario previsto di accesso al bagno:</label>
+            <input type="time" id="entry-time" name="entry-time" required>
+            <button type="submit">Registrati</button>
+        </form>
+        <div id="queue-status">
+            <h2>Stato della Fila</h2>
+            <p><strong>Numero di studenti in fila:</strong> <span id="queue-count">0</span></p>
+            <p><strong>Prossimo studente in fila:</strong> <span id="next-student">Nessuno</span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
